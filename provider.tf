@@ -6,3 +6,10 @@ terraform {
     }
   }
 }
+
+provider "oci" {
+  ignore_defined_tags = [
+    "Oracle-Tags.CreatedBy",
+    "Oracle-Tags.CreatedOn",
+  ]
+}
